@@ -32,6 +32,7 @@
       h1 { font-size: 58px; }
       span.date, span.time { display: block; }
 
+
       /*Layout*/
       .nav {
       right: 50px;
@@ -66,22 +67,6 @@
       padding-top: 800px;
       padding-bottom: 800px;
       }
-      .title {
-      height: 1500px;
-      padding-top: 750px;
-      background-image: url(img/bg/title-bg-1.png);
-      background-repeat: repeat;
-      background-attachment: fixed;
-      background-size: cover;
-      }
-      img.title-right {
-      position: absolute;
-      right:0;
-      }
-      img.title-left {
-      position: absolute;
-      left:0;
-      }
 
 
       /*Colors*/
@@ -89,6 +74,7 @@
       .teal-light { color: #7fbed0; }
       .gray-dark { color: #656565; }
       .gray-light { color: #e7e7e9; }
+
 
       /*Components*/
       .background-sprite {
@@ -102,20 +88,86 @@
       .background-sprite.h-center { right: 700px; }
       .background-sprite.right { right: 50px; }
 
+
       /*Pages*/
+      .title {
+      height: 2000px;
+      padding-top: 100px;
+      position: relative;
+      }
+      .title-bg {
+      width: 100%;
+      height: 100%;
+      background-image: url(img/bg/title-bg-1.png);
+      background-repeat: repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 0;
+      }
+      .title-bg-right {
+      width: 100%;
+      height: 100%;
+      background-image: url(img/sprites/title-bg-2.png);
+      background-repeat: repeat-y;
+      background-position: 100% 0%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+      }
+      .title-bg-left {
+      width: 100%;
+      height: 100%;
+      background-image: url(img/sprites/title-bg-3.png);
+      background-repeat: repeat-y;
+      background-position: 0 0;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+      }
+
+      .title h1 {
+      width: 100%;
+      text-align: center;
+      z-index: 2;
+      position: relative;
+      }
+      img.title-right {
+      position: absolute;
+      right:0;
+      z-index: 1;
+      }
+      img.title-left {
+      position: absolute;
+      left:0;
+      z-index: 1;
+      }
+
+      #welcome-text {
+      padding-top: 300px;
+      }
       .welcome, .bridal-party {
       background-image: url(img/bg/texture-1.jpg);
       background-repeat: repeat;
       background-attachment: fixed;
-      }
-      .welcome {
-      padding-top: 100px;
       }
       .about {
       background-image: url(img/bg/bg-1.jpg);
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: cover;
+      height: 4000px;
+      }
+      #how-we-met {
+      position: relative;
+      }
+      #the-proposal {
+      position: relative;
+      top: 400px;
       }
 
     </style>
@@ -123,78 +175,59 @@
 
   <body>
     <ul class="nav nav-stacked navbar-fixed-top nav-pills">
-      <li class="active">
-	<a href="#">Welcome</a>
-      </li>
-      <li>
-	<a href="#">About Us</a>
-      </li>
-      <li>
-	<a href="#">Bridal Party</a>
-      </li>
+      <li class="active"><a href="#">Welcome</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Bridal Party</a></li>
+      <li><a href="#">Event Information</a></li>
+      <li><a href="#">Accommodations & Activities</a></li>
+      <li><a href="#">RSVP</a></li>
     </ul>
 
-    <div class="page welcome">
-      <img class="background-sprite right top" src="img/sprites/flower-1.png" />
-      <img class="background-sprite left bottom " src="img/sprites/flower-2.png" />
-      <img class="background-sprite left top" src="img/sprites/flower-3.png" />
+    <div class="page welcome diagonal-top-padded">
+      <img id="flower-1" class="background-sprite right" src="img/sprites/flower-1.png" />
+      <img id="flower-2" class="background-sprite left" src="img/sprites/flower-2.png" />
+      <img id="flower-3" class="background-sprite left" src="img/sprites/flower-3.png" />
 
-      <div class="container diagonal-top-padded">
+      <header id="welcome-text" class="container offset2">
 	<h1>Gloria Lee <i class="teal-dark">and</i><br />Norman Hsieh</h1>
 	<h3>Joyfully invite you to the celebration of their marriage</h3>
-      </div>
-
+      </header>
       <div class="diagonal-top"></div>
     </div>
 
-<!--
-    <div class="container text-right" style="position:absolute;right:100px;top:400px;">
-      <time datetime="2012-08-31T15:30PDT"><span class="date">8&bull;31&bull;13</span><span class="time">Half past three o'clock in the afternoon</span></time>
-
-      <div class="vcard">
-	<p class="adr">
-	  <span class="">Crystal Springs Golf Course</span><br>
-	  <span class="street-address">6650 Golf Course Drive</span><br>
-	  <span class="region">Burlingame, CA</span>
-	  <span class="postal-code">94010</span><br>
-	</p>
+    <div class="title">
+      <div id="title-1-bg">
+	<div class="title-bg"></div>
+	<div class="title-bg-left"></div>
+	<div class="title-bg-right"></div>
       </div>
 
-      <p>dinner & dancing to follow</p>
-    </div>
--->
-
-    <div class="title text-center">
-      <img class="title-right" src="img/sprites/title-bg-2.png" />
-      <img class="title-left" src="img/sprites/title-bg-3.png" />
-
-      <div class="container">
-	<h1>I. About Us</h1>
-      </div>
+      <h1 id="title-1-header">About Us</h1>
     </div>
 
     <div class="page about">
       <div class="diagonal-bottom"></div>
 
       <div class="container diagonal-padded">
+	<div id="how-we-met">
 	<h3>How We Met</h3>
 
-	<p>Organic consequat jean shorts occupy, gluten-free nisi dolor. Laborum lomo hashtag placeat pitchfork, YOLO kogi eu culpa gentrify cillum quinoa pug. Mlkshk banjo Wes Anderson farm-to-table dreamcatcher consectetur. Mustache ea whatever, retro scenester occupy pork belly next level ullamco cardigan direct trade raw denim lomo deep v. Et skateboard plaid letterpress, commodo hoodie narwhal Brooklyn tousled cray hella. Tonx gentrify raw denim nisi, deserunt street art sint biodiesel Terry Richardson four loko fashion axe. Irure blog organic deserunt, tote bag scenester keffiyeh kogi pork belly ea bespoke velit tousled.</p>
+	<p>Although Gloria and Norman went to the same high school, their paths didn’t really cross until Norman was living 3000 miles away in New York, what should’ve been the best city to be single in. During several of his business trips back to the west coast, his plans to hang out with his friends often led to, by fate of course, running into Gloria at many of these outings. Their conversations were usually short but always pleasant and eventually Gloria got a hold of his AIM screen name so they could continue these conversations. Gloria’s miserable accounting job kept her up till odd hours and coincidentally those were the same hours Norman would come home from the bars to provide entertainment and good company. They began to chat quite frequently and their night owl habits easily took down any time zone barrier regardless of where he was traveling to for work. Each subsequent encounter when Norman came home made it apparent to everybody around them that something was going on, so much so that their friends eventually sped things up by literally ditching them at “Cellar” one night in the spring of  2007 (Thank you Tony and James). The rest of the story is pretty easy to guess, mostly filled with good friends, family, food, travel and a spoiled dog named Zoey :)</p>
+	</div>
 
-	<p>Godard adipisicing gentrify, Bushwick cupidatat direct trade lo-fi messenger bag laborum cray. Small batch DIY tofu Marfa beard, Tonx do swag occaecat Neutra adipisicing twee shabby chic. Ullamco cornhole photo booth culpa veniam, meh quinoa thundercats. Quinoa farm-to-table try-hard, kitsch Etsy narwhal PBR next level authentic assumenda laboris disrupt hashtag non. Schlitz Williamsburg lomo, brunch try-hard dreamcatcher intelligentsia exercitation. Butcher incididunt laborum ut, minim roof party Schlitz fashion axe pug. Lo-fi Carles ethnic Godard.</p>
-
+	<div id="the-proposal">
 	<h3>The Proposal</h3>
 
-	<p>Pinterest cupidatat Echo Park ex authentic. Squid minim tumblr Pinterest magna, ugh selfies Williamsburg freegan wayfarers kogi street art blue bottle. Excepteur whatever hella, Wes Anderson ea PBR Neutra High Life ad. Accusamus keytar mustache, selfies do delectus assumenda tofu semiotics. Schlitz quis nisi freegan ullamco scenester. Laboris meggings plaid nisi Truffaut, kitsch odio eu Brooklyn chillwave ex bicycle rights jean shorts lomo. Quis flexitarian lomo do try-hard biodiesel.</p>
-
-	<p>Letterpress yr enim viral, mustache DIY Echo Park. Kitsch farm-to-table wolf brunch. DIY retro next level, dolor direct trade delectus actually leggings blue bottle small batch kale chips art party. Retro irony vinyl Pinterest, cupidatat tofu eiusmod bitters actually excepteur locavore occaecat photo booth. Et nisi single-origin coffee, street art raw denim cray Schlitz letterpress officia. Banksy yr authentic, 3 wolf moon viral esse sriracha twee shoreditch master cleanse pariatur. Keffiyeh in sunt tattooed fixie, hashtag PBR est.</p>
+	<p>After brainstorming for months I landed on the idea that I wanted to propose under the fireworks on a boat, mainly because Gloria loves fireworks more than any person I know. I didn’t really want to do it on a gigantic boat full of people so my genius plan involved telling her that we were going to go on a gigantic boat full of people when it would just be a small boat with the two of us. In order to make this seem less obvious, a few days before July 4th, I told her that the charter company called me and told me that the cruise was overbooked and that we were the winners from a random drawing and would be offered a spot on a smaller private sail boat with a handful of other people. She didn’t buy the story right away as she was thinking that we were getting ripped off but I assured her that this was normally a much more expensive boat ride. She eventually bought the story, and off we were to Sausalito on the night of the 4th. She was still hesitant as to why nobody else showed up at the boat, but the crew played if off flawlessly and soon we were cutting through the choppy big waves in the bay holding on for our dear lives. Eventually we docked right when the sun was setting, I nervously wiggled the ring out under the life jacket making sure I didn’t drop it into the water. I got on one knee and popped the question. Of course she said “Yes!” and the fireworks after certainly weren’t too shabby.</p>
+	</div>
       </div>
+
       <div class="diagonal-top"></div>
     </div>
 
     <div class="title text-center">
       <div class="container">
-	<h1>II. The Bridal Party</h1>
+	<h1>The Bridal Party</h1>
       </div>
     </div>
 
@@ -307,3 +340,23 @@
 
   </body>
 </html>
+
+
+
+
+<!--
+    <div class="container text-right" style="position:absolute;right:100px;top:400px;">
+      <time datetime="2012-08-31T15:30PDT"><span class="date">8&bull;31&bull;13</span><span class="time">Half past three o'clock in the afternoon</span></time>
+
+      <div class="vcard">
+	<p class="adr">
+	  <span class="">Crystal Springs Golf Course</span><br>
+	  <span class="street-address">6650 Golf Course Drive</span><br>
+	  <span class="region">Burlingame, CA</span>
+	  <span class="postal-code">94010</span><br>
+	</p>
+      </div>
+
+      <p>dinner & dancing to follow</p>
+    </div>
+-->
