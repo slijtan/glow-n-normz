@@ -43,8 +43,14 @@ function initAnimations(){
     //ABOUT US TITLE
     controller.addTween('#title-1-bg',
 			TweenMax.from($('#title-1-bg'), .5, {css:{opacity:0}}),
+			400,
+			200
+		       );
+
+    controller.addTween('#title-1-bg',
+			TweenMax.to($('#title-1-bg'), .5, {css:{opacity:0}}),
 			600,
-			300
+			900
 		       );
 
     controller.addTween('#title-1-header',
@@ -53,7 +59,14 @@ function initAnimations(){
 			-300
 		       );
 
-    controller.pin($('#title-1-header'), 1800, {offset: -350});
+    controller.pin($('#title-1-header'), 1100, {offset: -350});
+
+    controller.addTween('#title-1-header',
+			TweenMax.to($('#title-1-header'), .5, {css:{opacity:0}}),
+			300,
+			50
+		       );
+
 
     //ABOUT US
     controller.addTween('#how-we-met',
@@ -61,15 +74,40 @@ function initAnimations(){
 			400,
 			-400
 		       );
-    controller.pin($('#how-we-met'), 700, {offset: -400});
+    controller.pin($('#how-we-met'), 700, {offset: -100});
 
     controller.addTween('#the-proposal',
 			TweenMax.from($('#the-proposal'), .5, {css:{opacity:0}}),
 			400,
-			-200
+			-400
 		       );
 
     controller.pin($('#the-proposal'), 700, {offset: -100});
+
+
+    //BRIDAL PARTY TITLE
+    controller.addTween('#title-2-bg',
+			TweenMax.from($('#title-2-bg'), .5, {css:{opacity:0}}),
+			600,
+			300
+		       );
+
+    controller.addTween('#title-2-header',
+			TweenMax.from($('#title-2-header'), .5, {css:{opacity:0}}),
+			300,
+			-300
+		       );
+
+    controller.pin($('#title-2-header'), 1800, {offset: -350});
+
+    //BRIDAL PARTY
+    controller.addTween('#bridal-party',
+			TweenMax.from($('#bridal-party'), .5, {css:{opacity:0}}),
+			400,
+			-400
+		       );
+    controller.pin($('#bridal-party'), 700, {offset: -400});
+
 
 }
 
