@@ -38,6 +38,7 @@
       border-radius: 10px;
       }
       hr {
+      border: none;
       border-bottom: 1px dashed #e7e7e9;
       }
 
@@ -96,49 +97,11 @@
       .background-sprite.h-center { right: 700px; }
       .background-sprite.right { right: 50px; }
 
-
       /*Pages*/
-      #title-1-bg, #title-2-bg, #title-3-bg, #title-4-bg, #title-5-bg, #title-6-bg {
-      display: none;
-      }
       .title {
       height: 400px;
       padding-top: 100px;
       position: relative;
-      }
-      .title-bg {
-      width: 100%;
-      height: 100%;
-      background-image: url(img/bg/title-bg-1.png);
-      background-repeat: repeat;
-      background-attachment: fixed;
-      background-size: cover;
-      position: absolute;
-      left: 0;
-      top: 0;
-      z-index: 0;
-      }
-      .title-bg-right {
-      width: 100%;
-      height: 100%;
-      background-image: url(img/sprites/title-bg-2.png);
-      background-repeat: repeat-y;
-      background-position: 100% 0%;
-      position: absolute;
-      left: 0;
-      top: 0;
-      z-index: 1;
-      }
-      .title-bg-left {
-      width: 100%;
-      height: 100%;
-      background-image: url(img/sprites/title-bg-3.png);
-      background-repeat: repeat-y;
-      background-position: 0 0;
-      position: absolute;
-      left: 0;
-      top: 0;
-      z-index: 1;
       }
       .title h1 {
       width: 100%;
@@ -146,17 +109,6 @@
       z-index: 2;
       position: relative;
       }
-      img.title-right {
-      position: absolute;
-      right:0;
-      z-index: 1;
-      }
-      img.title-left {
-      position: absolute;
-      left:0;
-      z-index: 1;
-      }
-
       #welcome-text {
       padding-top: 300px;
       }
@@ -184,7 +136,7 @@
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: cover;
-      height: 3100px;
+      height: 3150px;
       }
       #groomsmen {
       position: relative;
@@ -248,12 +200,6 @@
     </div>
 
     <div class="title">
-      <div id="title-1-bg">
-	<div class="title-bg"></div>
-	<div class="title-bg-left"></div>
-	<div class="title-bg-right"></div>
-      </div>
-
       <h1 id="title-1-header">About Us</h1>
     </div>
 
@@ -288,12 +234,6 @@
     </div>
 
     <div class="title">
-      <div id="title-2-bg">
-	<div class="title-bg"></div>
-	<div class="title-bg-left"></div>
-	<div class="title-bg-right"></div>
-      </div>
-
       <h1 id="title-2-header">The Bridal Party</h1>
     </div>
 
@@ -374,12 +314,6 @@
     </div>
 
     <div class="title">
-      <div id="title-3-bg">
-	<div class="title-bg"></div>
-	<div class="title-bg-left"></div>
-	<div class="title-bg-right"></div>
-      </div>
-
       <h1 id="title-3-header">Event Information</h1>
     </div>
 
@@ -430,22 +364,10 @@
     </div>
 
     <div class="title">
-      <div id="title-4-bg">
-	<div class="title-bg"></div>
-	<div class="title-bg-left"></div>
-	<div class="title-bg-right"></div>
-      </div>
-
       <h1 id="title-4-header">Accommodations & Activities</h1>
     </div>
 
     <div class="title">
-      <div id="title-5-bg">
-	<div class="title-bg"></div>
-	<div class="title-bg-left"></div>
-	<div class="title-bg-right"></div>
-      </div>
-
       <h1 id="title-5-header">RSVP</h1>
     </div>
 
@@ -462,13 +384,20 @@
 	      <label>Last Name</label><input type="text" name="entry.287064319" value="" class="ss-q-short" id="entry_287064319"><br />
 	      <label>Will you be joining us?</label>
 	      <input type="radio" name="entry.980463117" value="Yes" id="group_980463117_1"> Yes
-	      <input type="radio" name="entry.980463117" value="No" id="group_980463117_2"> No<br /><br />
+	      <input type="radio" name="entry.980463117" value="No" id="group_980463117_2"> No
+	      <br /><br />
 	      <label>What would you like to eat?</label>
 	      <input type="radio" name="entry.2093009328" value="Steak" id="group_2093009328_1"> Steak
 	      <input type="radio" name="entry.2093009328" value="Chicken" id="group_2093009328_2"> Chicken
 	      <input type="radio" name="entry.2093009328" value="Fish" id="group_2093009328_3" class="ss-q-radio" aria-label="Fish"> Fish
 	      <input type="radio" name="entry.2093009328" value="Vegetarian" id="group_2093009328_4" class="ss-q-radio" aria-label="Vegetarian"> Vegetarian
+	      <br /><br />
+	      <label>Will you be taking the shuttle?</label>
+	      <input type="radio" name="entry.2093009328" value="Yes" id="group_2093009328_1"> Yes
+	      <input type="radio" name="entry.2093009328" value="No" id="group_2093009328_2"> No
+
 	      <input type="hidden" name="draftResponse" value="[]
+
 							       ">
 	      <input type="hidden" name="pageHistory" value="0">
 	      <br /><br />
@@ -483,35 +412,8 @@
     </div>
 
     <div class="title">
-      <div id="title-6-bg">
-	<div class="title-bg"></div>
-	<div class="title-bg-left"></div>
-	<div class="title-bg-right"></div>
-      </div>
-
       <h1 id="title-6-header">See You Soon!</h1>
     </div>
 
-
   </body>
 </html>
-
-
-
-
-<!--
-    <div class="container text-right" style="position:absolute;right:100px;top:400px;">
-      <time datetime="2012-08-31T15:30PDT"><span class="date">8&bull;31&bull;13</span><span class="time">Half past three o'clock in the afternoon</span></time>
-
-      <div class="vcard">
-	<p class="adr">
-	  <span class="">Crystal Springs Golf Course</span><br>
-	  <span class="street-address">6650 Golf Course Drive</span><br>
-	  <span class="region">Burlingame, CA</span>
-	  <span class="postal-code">94010</span><br>
-	</p>
-      </div>
-
-      <p>dinner & dancing to follow</p>
-    </div>
--->

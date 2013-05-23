@@ -26,21 +26,6 @@ function setupTitles(controller){
 	$title_selector = '#title-' + ($index + 1) +'-bg';
 	$header_selector = '#title-' + ($index + 1) +'-header';
 
-/*
-	controller.addTween($title_selector,
-			TweenMax.from($($title_selector), .5, {css:{opacity:0}}),
-			400,
-			200
-		       );
-
-
-	controller.addTween($title_selector,
-			    TweenMax.to($($title_selector), .5, {css:{opacity:0}}),
-			    600,
-			    900
-			   );
-*/
-
 	controller.addTween($header_selector,
 			    TweenMax.from($($header_selector), .5, {css:{opacity:0}}),
 			    300,
