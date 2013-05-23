@@ -107,6 +107,9 @@ function initAnimations(){
     controller.pin($('#map'), 765, {offset: 100, pushFollowers: false});
 
     controller.pin($('#directions'), 230, {offset: -100, pushFollowers: false});
+
+    //RSVP
+    controller.pin($('#rsvp'), 400, {offset: -200});
 }
 
 $(function() {

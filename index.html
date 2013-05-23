@@ -31,6 +31,15 @@
       h1,h2,h3,h4,h5,h6 { text-transform: uppercase; }
       h1 { font-size: 58px; }
       span.date, span.time { display: block; }
+      form {
+      background-color: white;
+      padding: 20px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      }
+      hr {
+      border-bottom: 1px dashed #e7e7e9;
+      }
 
 
       /*Layout*/
@@ -201,6 +210,14 @@
       position: relative;
       padding-top: 300px;
       z-index: 6;
+      }
+
+      .rsvp {
+      background-image: url(img/bg/bg-3.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      height: 2200px;
       }
 
     </style>
@@ -420,6 +437,57 @@
       <h1 id="title-4-header">Accommodations & Activities</h1>
     </div>
 
+    <div class="title">
+      <div id="title-5-bg">
+	<div class="title-bg"></div>
+	<div class="title-bg-left"></div>
+	<div class="title-bg-right"></div>
+      </div>
+
+      <h1 id="title-5-header">RSVP</h1>
+    </div>
+
+    <div class="page rsvp">
+      <div class="diagonal-bottom"></div>
+
+      <div class="container diagonal-padded">
+	<div class="row" id="rsvp">
+	  <div class="offset0">
+	    <form action="https://docs.google.com/forms/d/1efTGjZMczhKUwS7kaQkJWEg9iwc-76rF5JkREpj-yGM/formResponse" method="POST" id="ss-form" target="_self" onsubmit="" class="span4 offset1">
+	      <h1>RSVP</h1>
+	      <hr />
+	      <label for="entry.1163226199">First Name</label><input type="text" name="entry.1163226199" value="" id="entry_1163226199" ><br />
+	      <label>Last Name</label><input type="text" name="entry.287064319" value="" class="ss-q-short" id="entry_287064319"><br />
+	      <label>Will you be joining us?</label>
+	      <input type="radio" name="entry.980463117" value="Yes" id="group_980463117_1">
+	      <input type="radio" name="entry.980463117" value="No" id="group_980463117_2"><br />
+	      <label>What would you like to eat?</label>
+	      <input type="radio" name="entry.2093009328" value="Steak" id="group_2093009328_1">
+	      <input type="radio" name="entry.2093009328" value="Chicken" id="group_2093009328_2">
+	      <input type="radio" name="entry.2093009328" value="Fish" id="group_2093009328_3" class="ss-q-radio" aria-label="Fish">
+	      <input type="radio" name="entry.2093009328" value="Vegetarian" id="group_2093009328_4" class="ss-q-radio" aria-label="Vegetarian">
+	      <input type="hidden" name="draftResponse" value="[]
+							       ">
+	      <input type="hidden" name="pageHistory" value="0">
+	      <input type="submit" name="submit" value="Submit" id="ss-submit">
+	    </form>
+
+	  </div>
+	</div>
+      </div>
+
+      <div class="diagonal-top"></div>
+    </div>
+
+    <div class="title">
+      <div id="title-6-bg">
+	<div class="title-bg"></div>
+	<div class="title-bg-left"></div>
+	<div class="title-bg-right"></div>
+      </div>
+
+      <h1 id="title-6-header">See You Soon!</h1>
+    </div>
 
 
   </body>
