@@ -101,7 +101,12 @@ function initAnimations(){
 
     controller.pin($('#bridesmaids'), 300, {offset: -200});
 
+    //EVENT
+    controller.pin($('#event'), 1200, {offset: -100, pushFollowers: false});
 
+    controller.pin($('#map'), 765, {offset: 100, pushFollowers: false});
+
+    controller.pin($('#directions'), 230, {offset: -100, pushFollowers: false});
 }
 
 $(function() {

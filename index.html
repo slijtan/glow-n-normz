@@ -182,6 +182,23 @@
       top: 220px;
       }
       #bridesmaids ul li { float: right; }
+      #event {
+      position: relative;
+      z-index: 6;
+      }
+      .event {
+      height: 2500px;
+      }
+      #map {
+      position: relative;
+      padding-top: 300px;
+      z-index: 5;
+      }
+      #directions {
+      position: relative;
+      padding-top: 300px;
+      z-index: 6;
+      }
 
     </style>
   </head>
@@ -346,9 +363,7 @@
 
 
     <div class="page event">
-      <div class="diagonal-bottom"></div>
-
-      <div class="container diagonal-padded">
+      <div class="container">
 
 	<div id="event" class="row">
 	  <div class="span7 gray-dark">
@@ -362,8 +377,8 @@
 	</div>
 
 	<div id="map" class="row">
-	  <div class="offset2 span4">
-	    <img src="http://images4.weddingwindow.com/customers/145016/Map.png?random=869227264" style="max-width:1000%;width:600px;" />
+	  <div class="offset3 span4">
+	    <img src="http://images4.weddingwindow.com/customers/145016/Map.png?random=869227264" style="max-width:1000%;width:500px;" />
 	  </div>
 	</div>
 
@@ -389,12 +404,19 @@
 	  </div>
 	</div>
 
+      </div>
+    </div>
 
-
+    <div class="title">
+      <div id="title-4-bg">
+	<div class="title-bg"></div>
+	<div class="title-bg-left"></div>
+	<div class="title-bg-right"></div>
       </div>
 
-      <div class="diagonal-top"></div>
+      <h1 id="title-4-header">Accommodations & Activities</h1>
     </div>
+
 
 
   </body>
