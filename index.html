@@ -41,7 +41,6 @@
       border-bottom: 1px dashed #e7e7e9;
       }
 
-
       /*Layout*/
       .nav {
       right: 50px;
@@ -99,8 +98,11 @@
 
 
       /*Pages*/
+      #title-1-bg, #title-2-bg, #title-3-bg, #title-4-bg, #title-5-bg, #title-6-bg {
+      display: none;
+      }
       .title {
-      height: 1300px;
+      height: 400px;
       padding-top: 100px;
       position: relative;
       }
@@ -459,16 +461,17 @@
 	      <label for="entry.1163226199">First Name</label><input type="text" name="entry.1163226199" value="" id="entry_1163226199" ><br />
 	      <label>Last Name</label><input type="text" name="entry.287064319" value="" class="ss-q-short" id="entry_287064319"><br />
 	      <label>Will you be joining us?</label>
-	      <input type="radio" name="entry.980463117" value="Yes" id="group_980463117_1">
-	      <input type="radio" name="entry.980463117" value="No" id="group_980463117_2"><br />
+	      <input type="radio" name="entry.980463117" value="Yes" id="group_980463117_1"> Yes
+	      <input type="radio" name="entry.980463117" value="No" id="group_980463117_2"> No<br /><br />
 	      <label>What would you like to eat?</label>
-	      <input type="radio" name="entry.2093009328" value="Steak" id="group_2093009328_1">
-	      <input type="radio" name="entry.2093009328" value="Chicken" id="group_2093009328_2">
-	      <input type="radio" name="entry.2093009328" value="Fish" id="group_2093009328_3" class="ss-q-radio" aria-label="Fish">
-	      <input type="radio" name="entry.2093009328" value="Vegetarian" id="group_2093009328_4" class="ss-q-radio" aria-label="Vegetarian">
+	      <input type="radio" name="entry.2093009328" value="Steak" id="group_2093009328_1"> Steak
+	      <input type="radio" name="entry.2093009328" value="Chicken" id="group_2093009328_2"> Chicken
+	      <input type="radio" name="entry.2093009328" value="Fish" id="group_2093009328_3" class="ss-q-radio" aria-label="Fish"> Fish
+	      <input type="radio" name="entry.2093009328" value="Vegetarian" id="group_2093009328_4" class="ss-q-radio" aria-label="Vegetarian"> Vegetarian
 	      <input type="hidden" name="draftResponse" value="[]
 							       ">
 	      <input type="hidden" name="pageHistory" value="0">
+	      <br /><br />
 	      <input type="submit" name="submit" value="Submit" id="ss-submit">
 	    </form>
 
