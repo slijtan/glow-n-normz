@@ -99,16 +99,30 @@ function initAnimations(){
     controller.pin($('#bridesmaids'), 300, {offset: -200});
 
 
-
     //EVENT
+    controller.addTween('#event',
+			TweenMax.from($('#event'), .5, {css:{opacity:0}}),
+			400,
+			-200
+		       );
     controller.pin($('#event'), 1200, {offset: -100, pushFollowers: false});
 
+    controller.addTween('#map',
+			TweenMax.from($('#map'), .5, {css:{opacity:0}}),
+			400,
+			0
+		       );
     controller.pin($('#map'), 765, {offset: 100, pushFollowers: false});
 
+    controller.addTween('#directions',
+			TweenMax.from($('#directions'), .5, {css:{opacity:0}}),
+			400,
+			-100
+		       );
     controller.pin($('#directions'), 230, {offset: -100, pushFollowers: false});
 
     //RSVP
-    controller.pin($('#rsvp'), 400, {offset: -200});
+    controller.pin($('#rsvp'), 400, {offset: -100});
 }
 
 $(function() {
