@@ -146,4 +146,12 @@ $(function() {
     setDivHeight();
     setDiagonals();
     initAnimations();
+
+    $('ul.nav li a').on('click', function() {
+	$.smoothScroll({
+	    scrollTarget: $(this).attr('href'),
+	    speed: 900
+	});
+	return false;
+    });
 });

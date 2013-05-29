@@ -16,6 +16,7 @@
 
     <script type="text/javascript" src="js/greensock/TweenMax.min.js"></script>
     <script src="js/jquery.superscrollorama.js"></script>
+    <script src="js/jquery.smooth-scroll.min.js"></script>
     <script src="js/custom.js"></script>
 
     <style>
@@ -191,15 +192,15 @@
 
   <body>
     <ul class="nav nav-stacked navbar-fixed-top nav-pills">
-      <li class="active"><a href="#">Welcome</a></li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Bridal Party</a></li>
-      <li><a href="#">Event Information</a></li>
-      <li><a href="#">Accommodations & Activities</a></li>
-      <li><a href="#">RSVP</a></li>
+      <li class="active"><a href="#welcome">Welcome</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#bridal-party">Bridal Party</a></li>
+      <li><a href="#event">Event Information</a></li>
+      <li><a href="#accommodations-activities">Accommodations & Activities</a></li>
+      <li><a href="#rsvp">RSVP</a></li>
     </ul>
 
-    <div class="page welcome diagonal-top-padded">
+    <div class="page welcome diagonal-top-padded" id="welcome">
       <img id="flower-1" class="background-sprite right" src="img/sprites/flower-1.png" />
       <img id="flower-3" class="background-sprite left" src="img/sprites/flower-3.png" />
       <img id="flower-2" class="background-sprite left" src="img/sprites/flower-2.png" />
@@ -211,7 +212,7 @@
       <div class="diagonal-top"></div>
     </div>
 
-    <div class="title">
+    <div class="title" id="about">
       <h1 id="title-1-header">About Us</h1>
     </div>
 
@@ -245,7 +246,7 @@
       <div class="diagonal-top"></div>
     </div>
 
-    <div class="title">
+    <div class="title" id="bridal-party">
       <h1 id="title-2-header">The Bridal Party</h1>
     </div>
 
@@ -325,7 +326,7 @@
       <div class="diagonal-top"></div>
     </div>
 
-    <div class="title">
+    <div class="title" id="event">
       <h1 id="title-3-header">Event Information</h1>
     </div>
 
@@ -375,7 +376,7 @@
       </div>
     </div>
 
-    <div class="title">
+    <div class="title" id="accommodations-activities">
       <h1 id="title-4-header">Accommodations & Activities</h1>
     </div>
 
@@ -442,7 +443,7 @@
     </div>
 
 
-    <div class="title">
+    <div class="title" id="rsvp">
       <h1 id="title-5-header">RSVP</h1>
     </div>
 
