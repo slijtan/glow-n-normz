@@ -154,4 +154,10 @@ $(function() {
 	});
 	return false;
     });
+
+    //scroll to fix initial tween positioning bug
+    $.smoothScroll({
+	scrollTarget: 'body',
+	offset: 0
+    });
 });
