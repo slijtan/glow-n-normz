@@ -84,9 +84,21 @@ function initAnimations(){
     controller.pin($('#the-proposal'), 300, {offset: -100});
 
     //BRIDAL PARTY
+    controller.addTween('#groomsmen',
+			TweenMax.from($('#groomsmen'), .5, {css:{opacity:0}}),
+			400,
+			-200
+		       );
     controller.pin($('#groomsmen'), 300, {offset: -100});
 
+    controller.addTween('#bridesmaids',
+			TweenMax.from($('#bridesmaids'), .5, {css:{opacity:0}}),
+			400,
+			-200
+		       );
     controller.pin($('#bridesmaids'), 300, {offset: -200});
+
+
 
     //EVENT
     controller.pin($('#event'), 1200, {offset: -100, pushFollowers: false});
