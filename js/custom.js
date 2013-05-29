@@ -53,13 +53,13 @@ function initAnimations(){
 			(new TimelineLite())
 			.append([
 			    TweenMax.fromTo($('#flower-1'), 1,
-					    {css:{top: 50}, immediateRender:true},
-					    {css:{top: 200}}),
-			    TweenMax.fromTo($('#flower-2'), 1,
-					    {css:{bottom: 0}, immediateRender:true},
-					    {css:{bottom: 550}}),
-			    TweenMax.fromTo($('#flower-3'), 1,
 					    {css:{top: -200}, immediateRender:true},
+					    {css:{top: 500}}),
+			    TweenMax.fromTo($('#flower-2'), 1,
+					    {css:{bottom: 200}, immediateRender:true},
+					    {css:{bottom: 350}}),
+			    TweenMax.fromTo($('#flower-3'), 1,
+					    {css:{top: -450}, immediateRender:true},
 					    {css:{top: 300}})
 			]),
 			1000 // scroll duration of tween
