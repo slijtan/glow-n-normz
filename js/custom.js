@@ -26,19 +26,19 @@ function setupTitles(controller){
 	$title_selector = '#title-' + ($index + 1) +'-bg';
 	$header_selector = '#title-' + ($index + 1) +'-header';
 
-	controller.addTween($header_selector,
+	/*controller.addTween($header_selector,
 			    TweenMax.from($($header_selector), .5, {css:{opacity:0}}),
 			    300,
 			    -300
-			   );
+			   );*/
 
 	controller.pin($($header_selector), 300, {offset: -350});
 
-	controller.addTween($header_selector,
+	/*controller.addTween($header_selector,
 			    TweenMax.to($($header_selector), .5, {css:{opacity:0}}),
 			    300,
 			    50
-			   );
+			   );*/
     });
 
 }
@@ -120,6 +120,23 @@ function initAnimations(){
 			-100
 		       );
     controller.pin($('#directions'), 230, {offset: -100, pushFollowers: false});
+
+    //ACTIVITIES
+    controller.addTween('#accommodations',
+			TweenMax.from($('#accommodations'), .5, {css:{opacity:0}}),
+			400,
+			-200
+		       );
+    controller.pin($('#accommodations'), 300, {offset: -50});
+
+    controller.addTween('#activities',
+			TweenMax.from($('#activities'), .5, {css:{opacity:0}}),
+			400,
+			-200
+		       );
+
+    controller.pin($('#activities'), 300, {offset: -50});
+
 
     //RSVP
     controller.pin($('#rsvp'), 400, {offset: -100});
