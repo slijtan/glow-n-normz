@@ -142,11 +142,7 @@ function initAnimations(){
     controller.pin($('#rsvp'), 400, {offset: -100});
 }
 
-$(function() {
-    setDivHeight();
-    setDiagonals();
-    initAnimations();
-
+function initNavScroll(){
     $('ul.nav li a').on('click', function() {
 	$.smoothScroll({
 	    scrollTarget: $(this).attr('href'),
@@ -154,10 +150,42 @@ $(function() {
 	});
 	return false;
     });
+}
 
-    //scroll to fix initial tween positioning bug
-    $.smoothScroll({
-	scrollTarget: 'body',
-	offset: 0
+function initNavHighlighting(){
+    var $sections = $('.title');
+    var $navs = $('ul.nav > li');
+
+    var topsArray = $sections.map(function() {
+	return $(this).position().top;
+    }).get();
+
+    var len = topsArray.length;
+    var currentIndex = 0;
+
+    var getCurrent = function( top ) {
+	for( var i = 0; i < len; i++ ) {
+	    if( top < topsArray[i] ) {
+		return i;
+	    }
+	}
+    };
+
+    $(document).scroll(function(e) {
+	var scrollTop = $(this).scrollTop();
+	var checkIndex = getCurrent( scrollTop );
+	if( checkIndex !== currentIndex ) {
+	    currentIndex = checkIndex;
+	    $navs.eq( currentIndex ).addClass("active").siblings(".active").removeClass("active");
+	}
     });
+}
+
+$(function() {
+    setDivHeight();
+    setDiagonals();
+    initAnimations();
+    initNavScroll();
+    initNavHighlighting();
+    $.smoothScroll({ scrollTarget: 'body', offset: 0 }); //scroll to fix initial tween positioning bug
 });
