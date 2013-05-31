@@ -102,24 +102,25 @@ function initAnimations(){
     //EVENT
     controller.addTween('#event',
 			TweenMax.from($('#event'), .5, {css:{opacity:0}}),
-			200,
-			-400
+			500,
+			-600
 		       );
-    controller.pin($('#event'), 1102, {offset: 200, pushFollowers: false});
+    controller.pin($('#event'), 700, {offset: -100, pushFollowers: false});
 
     controller.addTween('#map',
 			TweenMax.from($('#map'), .5, {css:{opacity:0}}),
-			270,
-			-300
+			390,
+			-600
 		       );
-    controller.pin($('#map'), 700, {offset: 30, pushFollowers: false});
+    controller.pin($('#map'), 1170, {offset: -220, pushFollowers: false});
 
     controller.addTween('#directions',
 			TweenMax.from($('#directions'), .5, {css:{opacity:0}}),
 			200,
 			-400
 		       );
-    controller.pin($('#directions'), 230, {offset: -100, pushFollowers: false});
+    controller.pin($('#directions'), 300, {offset: -100, pushFollowers: false});
+
 
     //ACTIVITIES
     controller.addTween('#accommodations',

@@ -174,22 +174,24 @@
       top: 220px;
       }
       #bridesmaids ul li { float: right; }
+
+      .event {
+      background-color: #dedede;
+      height: 3650px;
+      }
       #event {
       position: relative;
       z-index: 6;
-      padding-top: 300px;
-      }
-      .event {
-      height: 2500px;
+      top: 100px;
       }
       #map {
       position: relative;
-      padding-top: 300px;
+      top: 200px;
       z-index: 5;
       }
       #directions {
       position: relative;
-      padding-top: 300px;
+      top: 630px;
       z-index: 6;
       }
 
@@ -374,48 +376,72 @@
 
 
     <div class="page event">
-      <div class="container">
+      <div class="diagonal-bottom"></div>
 
+      <div class="container diagonal-padded">
 	<div id="event" class="row">
 	  <div class="span7 gray-dark">
-	    <h2>8 &bull; 31 &bull; 13</h2>
+	    <h2 class="teal-light">Saturday, August 31, 2013</h2>
+
+	    <h3>Ceremony</h3>
 	    <h4>half past three o'clock in the afternoon</h4>
-	    <h4>crystal springs golf course</h4>
+	    <h4>@ Crystal springs golf course</h4>
 	    <h4>6650 golf course drive</h4>
 	    <h4>burlingame, ca 94010</h4>
-	    <h3 class="teal-dark"><i>dinner & dancing to follow</i></h3>
+	    <p class="teal-light">Ceremony will take place outdoors</p>
+
+	    <h3>Reception</h3>
+	    <h4>Cocktail hour begins at six o’clock in the evening</h4>
+	    <h4>@ Sofitel San Francisco Bay</h4>
+	    <h4>223 Twin Dolphin Drive</h4>
+	    <h4>Redwood City, CA 94065</h4>
+	    <p class="teal-light">Buses will be provided from the Sofitel to the Ceremony site and back for the Reception.  If you would like to take the bus, please fill out the RSVP form here.</p>
 	  </div>
 	</div>
 
 	<div id="map" class="row">
-	  <div class="offset2 span6">
+	  <div class="offset4 span6">
 	    <img src="img/sprites/map.png" />
 	  </div>
 	</div>
 
+
 	<div id="directions" class="row">
-	  <div class="offset8 span4">
+	  <div class="span6">
 	    <h2>Directions</h2>
 
+	    <h3>to Crystal Springs Golf Course</h3>
 	    <h4 class="teal-light">Northbound</h4>
-	    <ul class="gray-dark">
-	      <li>Take the 5</li>
-	      <li>Take the 5</li>
-	      <li>Take the 5</li>
-	      <li>Take the 5</li>
-	    </ul>
+	    <ol class="gray-dark">
+	      <li>Take 280N exit Hayne Rd.</li>
+	      <li>Exit left onto Hayne Rd.</li>
+	      <li>Ceremony site is straight ahead after stop sign.</li>
+	    </ol>
 
 	    <h4 class="teal-light">Southbound</h4>
-	    <ul class="gray-dark">
-	      <li>Take the 5</li>
-	      <li>Take the 5</li>
-	      <li>Take the 5</li>
-	      <li>Take the 5</li>
-	    </ul>
+	    <ol class="gray-dark">
+	      <li>Take 280S exit Hayne Rd.</li>
+	      <li>Exit right onto Hayne Rd. </li>
+	      <li>Ceremony site is straight ahead after stop sign.</li>
+	    </ol>
+
+	    <h3>from Crystal Springs to Sofitel</h3>
+	    <ol class="gray-dark">
+	      <li>Take 280S</li>
+	      <li>Merge onto 92E</li>
+	      <li>Merge onto 101S</li>
+	      <li>Exit @ Ralston Ave.</li>
+	      <li>Turn left onto Ralston Ave. and continue to Marine Pkwy</li>
+	      <li>Turn right onto Twin Dolphin Dr.</li>
+	      <li>Sofitel will be on the left</li>
+	    </ol>
+
 	  </div>
 	</div>
 
       </div>
+
+      <div class="diagonal-top"></div>
     </div>
 
     <div class="title" id="accommodations-activities-title">
@@ -446,6 +472,13 @@
 
 	    <p>Book by August 9th 5pm to secure the rate. 24 Hour cancellation policy is enforced.</p>
 	    <p>Hotel offers courtesy shuttle to and from SFO.</p>
+
+	    <h4>Nearby Airports</h4>
+	    <ul>
+	      <li>San Francisco International SFO (10 miles North)</li>
+	      <li>San Jose International SJC (25 miles South)</li>
+	      <li>Oakland International OAK (27 miles Northeast)</li>
+	    </ul>
 
 	    <h4>Parking</h4>
 	    <p>Parking is available and free at both the ceremony and reception sites.</p>
