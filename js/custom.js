@@ -129,6 +129,13 @@ function initAnimations(){
 		       );
     controller.pin($('#accommodations'), 300, {offset: -50});
 
+    controller.addTween('#transportation',
+			TweenMax.from($('#transportation'), .5, {css:{opacity:0}}),
+			400,
+			-200
+		       );
+    controller.pin($('#transportation'), 300, {offset: -50});
+
     controller.addTween('#activities',
 			TweenMax.from($('#activities'), .5, {css:{opacity:0}}),
 			400,
