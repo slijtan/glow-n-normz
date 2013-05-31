@@ -65,7 +65,8 @@ function initAnimations(){
 			1000 // scroll duration of tween
 		       );
 
-    controller.pin($('#welcome-text'), 820, {offset: 0, pushFollowers: false});
+    //controller.pin($('#welcome-text'), 820, {offset: 0, pushFollowers: false});
+    controller.pin($('#welcome-text'), 1000, {offset: 0, pushFollowers: false});
 
     //ABOUT US
     controller.addTween('#how-we-met',
