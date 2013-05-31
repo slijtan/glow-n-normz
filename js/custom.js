@@ -44,26 +44,37 @@ function setupTitles(controller){
 }
 
 function initAnimations(){
-    var controller = $.superscrollorama();
+    var controller = $.superscrollorama({triggerAtCenter: false});
 
     setupTitles(controller);
 
     //WELCOME PAGE
-    controller.addTween('#welcome-text',
-			(new TimelineLite())
-			.append([
-			    TweenMax.fromTo($('#flower-1'), 1,
-					    {css:{top: -200}, immediateRender:true},
-					    {css:{top: 500}}),
-			    TweenMax.fromTo($('#flower-2'), 1,
-					    {css:{bottom: 200}, immediateRender:true},
-					    {css:{bottom: 350}}),
-			    TweenMax.fromTo($('#flower-3'), 1,
-					    {css:{top: -450}, immediateRender:true},
-					    {css:{top: 300}})
-			]),
-			1000 // scroll duration of tween
-		       );
+    controller.addTween('#flower-1',
+			TweenMax.to($('#flower-1'), 1, {css:{top: 500}}),
+			500,
+			0);
+    controller.addTween('#flower-2',
+			TweenMax.to($('#flower-2'), 1, {css:{top: 600}}),
+			500,
+			0);
+    controller.addTween('#flower-3',
+			TweenMax.to($('#flower-3'), 1, {css:{top: 700}}),
+			500,
+			0);
+    controller.addTween('#flower-4',
+			TweenMax.to($('#flower-4'), 1, {css:{top: 800}}),
+			500,
+			0);
+    controller.addTween('#flower-5',
+			TweenMax.to($('#flower-5'), 1, {css:{top: 900}}),
+			500,
+			0);
+    controller.addTween('#flower-6',
+			TweenMax.to($('#flower-6'), 1, {css:{top: 1000}}),
+			500,
+			0);
+
+
 
     //controller.pin($('#welcome-text'), 820, {offset: 0, pushFollowers: false});
     controller.pin($('#welcome-text'), 1000, {offset: 0, pushFollowers: false});
@@ -71,15 +82,15 @@ function initAnimations(){
     //ABOUT US
     controller.addTween('#how-we-met',
 			TweenMax.from($('#how-we-met'), .5, {css:{opacity:0}}),
-			400,
-			-400
+			500,
+			-600
 		       );
     controller.pin($('#how-we-met'), 300, {offset: -100});
 
     controller.addTween('#the-proposal',
 			TweenMax.from($('#the-proposal'), .5, {css:{opacity:0}}),
-			400,
-			-400
+			500,
+			-600
 		       );
 
     controller.pin($('#the-proposal'), 300, {offset: -100});
@@ -88,14 +99,14 @@ function initAnimations(){
     controller.addTween('#groomsmen',
 			TweenMax.from($('#groomsmen'), .5, {css:{opacity:0}}),
 			400,
-			-200
+			-500
 		       );
     controller.pin($('#groomsmen'), 300, {offset: -100});
 
     controller.addTween('#bridesmaids',
 			TweenMax.from($('#bridesmaids'), .5, {css:{opacity:0}}),
 			400,
-			-200
+			-500
 		       );
     controller.pin($('#bridesmaids'), 300, {offset: -200});
 
@@ -103,22 +114,22 @@ function initAnimations(){
     //EVENT
     controller.addTween('#event',
 			TweenMax.from($('#event'), .5, {css:{opacity:0}}),
-			400,
-			0
+			200,
+			-400
 		       );
     controller.pin($('#event'), 1102, {offset: 200, pushFollowers: false});
 
     controller.addTween('#map',
 			TweenMax.from($('#map'), .5, {css:{opacity:0}}),
-			400,
-			0
+			270,
+			-300
 		       );
     controller.pin($('#map'), 700, {offset: 30, pushFollowers: false});
 
     controller.addTween('#directions',
 			TweenMax.from($('#directions'), .5, {css:{opacity:0}}),
 			200,
-			100
+			-400
 		       );
     controller.pin($('#directions'), 230, {offset: -100, pushFollowers: false});
 
@@ -126,21 +137,21 @@ function initAnimations(){
     controller.addTween('#accommodations',
 			TweenMax.from($('#accommodations'), .5, {css:{opacity:0}}),
 			400,
-			-200
+			-400
 		       );
     controller.pin($('#accommodations'), 300, {offset: -50});
 
     controller.addTween('#transportation',
 			TweenMax.from($('#transportation'), .5, {css:{opacity:0}}),
 			400,
-			-200
+			-400
 		       );
     controller.pin($('#transportation'), 300, {offset: -50});
 
     controller.addTween('#activities',
 			TweenMax.from($('#activities'), .5, {css:{opacity:0}}),
 			400,
-			-200
+			-400
 		       );
 
     controller.pin($('#activities'), 300, {offset: -50});
