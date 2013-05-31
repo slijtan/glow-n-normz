@@ -47,6 +47,7 @@
       border-bottom: 1px dashed #e7e7e9;
       }
       a { color: #10768f; }
+      label { display: inline; }
 
       /*Layout*/
       .nav {
@@ -538,19 +539,30 @@
 	    <form action="https://docs.google.com/forms/d/1efTGjZMczhKUwS7kaQkJWEg9iwc-76rF5JkREpj-yGM/formResponse" method="POST" id="ss-form" target="_self" onsubmit="" class="span4 offset1">
 	      <h1>RSVP</h1>
 	      <hr />
-	      <label for="entry.1163226199">First Name</label><input type="text" name="entry.1163226199" value="" id="entry_1163226199" ><br />
-	      <label>Last Name</label><input type="text" name="entry.287064319" value="" class="ss-q-short" id="entry_287064319"><br />
-	      <label>Will you be joining us?</label>
-	      <input type="radio" name="entry.980463117" value="Yes" id="group_980463117_1"> Yes
-	      <input type="radio" name="entry.980463117" value="No" id="group_980463117_2"> No
-	      <br /><br />
-	      <label>Please select an entree.</label>
-	      <input type="radio" name="entry.2093009328" value="Petit Filet Mignon &amp; Prawns" id="group_2093009328_1"> Petit Filet Mignon &amp; Prawns
-	      <input type="radio" name="entry.2093009328" value="Halibut" id="group_2093009328_2"> Halibut
-	      <br /><br />
-	      <label>Will you be taking the shuttle?</label>
-	      <input type="radio" name="entry.634110528" value="Yes" id="group_634110528_1"> Yes
-	      <input type="radio" name="entry.634110528" value="No" id="group_634110528_2"> No
+	      <p>
+	      <label for="entry_1163226199">First Name</label><br />
+	      <input type="text" name="entry.1163226199" value="" id="entry_1163226199">
+	      </p>
+
+	      <p>
+	      <label for="entry_287064319">Last Name</label><br />
+	      <input type="text" name="entry.287064319" value="" class="ss-q-short" id="entry_287064319">
+	      </p>
+
+	      <p>Will you be joining us?<br />
+	      <input type="radio" name="entry.980463117" value="Yes" id="group_980463117_1"> <label for="group_980463117_1">Yes</label>&nbsp;
+	      <input type="radio" name="entry.980463117" value="No" id="group_980463117_2"> <label for="group_980463117_2">No</label>
+	      </p>
+
+	      <p>Please select an entree.<br />
+	      <input type="radio" name="entry.2093009328" value="Petit Filet Mignon &amp; Prawns" id="group_2093009328_1"> <label for="group_2093009328_1">Petit Filet Mignon &amp; Prawns</label>&nbsp;
+	      <input type="radio" name="entry.2093009328" value="Halibut" id="group_2093009328_2"> <label for="group_2093009328_2">Halibut</label>
+	      </p>
+
+	      <p>Will you be taking the shuttle?<br />
+	      <input type="radio" name="entry.634110528" value="Yes" id="group_634110528_1"> <label for="group_634110528_1">Yes</label>&nbsp;
+	      <input type="radio" name="entry.634110528" value="No" id="group_634110528_2"> <label for="group_634110528_1">No</label>
+	      </p>
 
 	      <input type="hidden" name="draftResponse" value="[]
 
