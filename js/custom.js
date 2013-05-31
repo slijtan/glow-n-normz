@@ -49,6 +49,7 @@ function initAnimations(){
     setupTitles(controller);
 
     //WELCOME PAGE
+/*
     controller.addTween('#flower-1',
 			TweenMax.to($('#flower-1'), 1, {css:{top: 500}}),
 			500,
@@ -73,11 +74,9 @@ function initAnimations(){
 			TweenMax.to($('#flower-6'), 1, {css:{top: 1000}}),
 			500,
 			0);
-
-
-
-    //controller.pin($('#welcome-text'), 820, {offset: 0, pushFollowers: false});
+*/
     controller.pin($('#welcome-text'), 1000, {offset: 0, pushFollowers: false});
+
 
     //ABOUT US
     controller.addTween('#how-we-met',
