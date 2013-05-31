@@ -57,8 +57,8 @@ function initAnimations(){
 			   TweenMax.to($('#flower-5'), 1, {css:{top: 0}, immediateRender:true}),
 			   TweenMax.to($('#flower-6'), 1, {css:{top: 300}, immediateRender:true}),
 			   TweenMax.to($('#flower-7'), 1, {css:{top: 500}, immediateRender:true}),
-			   TweenMax.to($('#flower-8'), 1, {css:{top: 200}, immediateRender:true}),
-			   TweenMax.to($('#flower-9'), 1, {css:{top: 600}, immediateRender:true}),
+			   TweenMax.to($('#flower-8'), 1, {css:{top: 400}, immediateRender:true}),
+			   TweenMax.to($('#flower-9'), 1, {css:{top: 800}, immediateRender:true}),
 			   TweenMax.to($('#flower-10'), 1, {css:{top: 800}, immediateRender:true})
 		       ]),
 		       1000 // scroll duration of tween
