@@ -48,33 +48,22 @@ function initAnimations(){
 
     setupTitles(controller);
 
-    //WELCOME PAGE
-/*
-    controller.addTween('#flower-1',
-			TweenMax.to($('#flower-1'), 1, {css:{top: 500}}),
-			500,
-			0);
-    controller.addTween('#flower-2',
-			TweenMax.to($('#flower-2'), 1, {css:{top: 600}}),
-			500,
-			0);
-    controller.addTween('#flower-3',
-			TweenMax.to($('#flower-3'), 1, {css:{top: 700}}),
-			500,
-			0);
-    controller.addTween('#flower-4',
-			TweenMax.to($('#flower-4'), 1, {css:{top: 800}}),
-			500,
-			0);
-    controller.addTween('#flower-5',
-			TweenMax.to($('#flower-5'), 1, {css:{top: 900}}),
-			500,
-			0);
-    controller.addTween('#flower-6',
-			TweenMax.to($('#flower-6'), 1, {css:{top: 1000}}),
-			500,
-			0);
-*/
+   controller.addTween('#welcome-text',
+		       (new TimelineLite())
+		       .append([
+			   TweenMax.to($('#flower-1'), 1, {css:{top: 350}, immediateRender:true}),
+			   TweenMax.to($('#flower-2'), 1, {css:{top: 100}, immediateRender:true}),
+			   TweenMax.to($('#flower-4'), 1, {css:{top: 100}, immediateRender:true}),
+			   TweenMax.to($('#flower-5'), 1, {css:{top: 100}, immediateRender:true}),
+			   TweenMax.to($('#flower-6'), 1, {css:{top: 100}, immediateRender:true}),
+			   TweenMax.to($('#flower-7'), 1, {css:{top: 500}, immediateRender:true}),
+			   TweenMax.to($('#flower-8'), 1, {css:{top: 200}, immediateRender:true}),
+			   TweenMax.to($('#flower-9'), 1, {css:{top: 600}, immediateRender:true}),
+			   TweenMax.to($('#flower-10'), 1, {css:{top: 800}, immediateRender:true})
+		       ]),
+		       1000 // scroll duration of tween
+		       );
+
     controller.pin($('#welcome-text'), 1000, {offset: 0, pushFollowers: false});
 
 
