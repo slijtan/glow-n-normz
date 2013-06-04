@@ -177,7 +177,7 @@ function initNavHighlighting(){
 	}
     };
 
-    $(document).scroll(function(e) {
+    $(window).scroll(function(e) {
 	var scrollTop = $(this).scrollTop();
 	var checkIndex = getCurrent( scrollTop );
 	if( checkIndex !== currentIndex ) {
