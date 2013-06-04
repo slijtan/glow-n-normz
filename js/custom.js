@@ -51,15 +51,13 @@ function initAnimations(){
    controller.addTween('#welcome-text',
 		       (new TimelineLite())
 		       .append([
-			   TweenMax.to($('#flower-1'), 1, {css:{top: 350}, immediateRender:true}),
-			   TweenMax.to($('#flower-2'), 1, {css:{top: 100}, immediateRender:true}),
-			   TweenMax.to($('#flower-4'), 1, {css:{top: 300}, immediateRender:true}),
-			   TweenMax.to($('#flower-5'), 1, {css:{top: 0}, immediateRender:true}),
-			   TweenMax.to($('#flower-6'), 1, {css:{top: 300}, immediateRender:true}),
-			   TweenMax.to($('#flower-7'), 1, {css:{top: 500}, immediateRender:true}),
-//                         TweenMax.to($('#flower-8'), 1, {css:{top: 400}, immediateRender:true}),
-			   TweenMax.to($('#flower-9'), 1, {css:{top: 800}, immediateRender:true}),
-//                         TweenMax.to($('#flower-10'), 1, {css:{top: 800}, immediateRender:true})
+			   TweenMax.to($('#flower-1'), 1, {css:{top: 350}}),
+			   TweenMax.to($('#flower-2'), 1, {css:{top: 100}}),
+			   TweenMax.to($('#flower-4'), 1, {css:{top: 300}}),
+			   TweenMax.to($('#flower-5'), 1, {css:{top: 0}}),
+			   TweenMax.to($('#flower-6'), 1, {css:{top: 300}}),
+			   TweenMax.to($('#flower-7'), 1, {css:{top: 500}}),
+			   TweenMax.to($('#flower-9'), 1, {css:{top: 800}})
 		       ]),
 		       1000 // scroll duration of tween
 		       );
